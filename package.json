@@ -1,0 +1,19 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Site de portfolio desenvolvido com HTML, CSS e JavaScript, totalmente responsivo Link: #",
+	"main": "script.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gilbertoaleite/portfolio"
+	},
+	"author": "Gilberto",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gilbertoaleite/Portfolio/issues"
+	},
+	"homepage": "https://github.com/gilbertoaleite/Portfolio"
+}
