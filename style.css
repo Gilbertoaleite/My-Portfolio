@@ -106,7 +106,7 @@ body.background-day {
 	width: 26px;
 	left: 4px;
 	bottom: 4px;
-	background-color: rgb(255, 255, 255);
+	background-color: #d4ac0d;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 	background-image: url('assets/moon-regular.svg');
@@ -117,7 +117,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-	box-shadow: 0 0 1px #5882fa;
+	box-shadow: 0 0 1px whitesmoke;
 }
 
 input:checked + .slider:before {
@@ -172,7 +172,7 @@ h2 {
 	padding: 1em 0.8em;
 	margin-top: 1em;
 	text-align: center;
-	background-color: #006400;
+	background-color: #04b431;
 	width: 200px;
 	color: white;
 	text-decoration: none;
@@ -186,7 +186,7 @@ h2 {
 }
 
 .whatsapp:hover {
-	background-color: #04b431;
+	background-color: #006400;
 }
 
 .whatsapp > img {
@@ -286,7 +286,6 @@ h2 {
 
 .item-projeto.background-day-gray {
 	background-color: #ebebeb;
-	color: black;
 }
 
 .item-projeto > .botao {
@@ -402,9 +401,10 @@ h2 {
 	margin: 3em 0;
 	margin-top: -3em;
 }
-.flex-experiencia.background-day-gray a {
+/* container experiencia */
+.flex-experiencia.background-day-gray {
 	background-color: #ebebeb;
-	color: black;
+	text-decoration: none;
 }
 
 .imagem-experiencia {
@@ -439,7 +439,6 @@ h2 {
 	gap: 1em;
 	text-align: justify;
 	text-decoration: none;
-	color: whitesmoke;
 }
 
 .faixa-item-experiencia {
@@ -458,7 +457,7 @@ h2 {
 
 .day-mode {
 	background-color: #ccc;
-	color: red;
+	color: #5882fa;
 }
 
 footer {
@@ -488,20 +487,20 @@ footer {
 		padding: 2em;
 		gap: 5em;
 	}
-	/*
+
 	.nav-li {
-		border-bottom: red solid 2px;
+		border-bottom: #2c2c2c solid 2px;
 		transition: 0.2s;
 	}
-*/
+
 	html.toggle {
-		background-color: red;
+		background-color: #2c2c2c;
 	}
-	/*
+
 	.nav-li:hover {
 		border-bottom: 6px solid #5882fa;
 	}
-*/
+
 	html.show {
 		overflow-y: hidden;
 	}
