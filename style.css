@@ -289,6 +289,11 @@ h2 {
 	color: black;
 }
 
+.flex-experiencia.background-day-gray {
+	background-color: #ebebeb;
+	text-decoration: none;
+}
+
 .item-projeto > .botao {
 	width: 100%;
 }
@@ -402,10 +407,6 @@ h2 {
 	margin: 3em 0;
 	margin-top: -3em;
 }
-.flex-experiencia.background-day-gray a {
-	background-color: #ebebeb;
-	color: black;
-}
 
 .imagem-experiencia {
 	position: absolute;
@@ -439,7 +440,6 @@ h2 {
 	gap: 1em;
 	text-align: justify;
 	text-decoration: none;
-	color: whitesmoke;
 }
 
 .faixa-item-experiencia {
@@ -457,8 +457,8 @@ h2 {
 }
 
 .day-mode {
-	background-color: #ccc;
-	color: red;
+	background-color: #bebebe;
+	color: black;
 }
 
 footer {
@@ -620,11 +620,5 @@ footer {
 	}
 	.imagem-experiencia-2 > img {
 		width: 360px;
-	}
-
-	.flex-experiencia {
-		flex-direction: column;
-		width: 80%;
-		margin: 5em 0;
 	}
 }
