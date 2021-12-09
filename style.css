@@ -107,6 +107,7 @@ body.background-day {
 	left: 4px;
 	bottom: 4px;
 	background-color: rgb(255, 255, 255);
+	box-shadow: 0 0 20px yellow;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 	background-image: url('assets/moon-regular.svg');
@@ -117,7 +118,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-	box-shadow: 0 0 1px #5882fa;
+	box-shadow: 0 0 20px #5882fa;
 }
 
 input:checked + .slider:before {
@@ -139,7 +140,7 @@ input:checked + .slider:before {
 	display: flex;
 	align-items: center;
 	width: 80%;
-	margin: 3em auto;
+	margin: 2em auto;
 	justify-content: space-between;
 	max-width: 1400px;
 }
@@ -414,18 +415,6 @@ h2 {
 	z-index: -1;
 }
 
-.imagem-experiencia-2 {
-	position: absolute;
-	bottom: -120px;
-	z-index: -1;
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-}
-
-.imagem-experiencia-2 > img {
-	width: 480px;
-}
 .reverse {
 	justify-content: start;
 	align-self: flex-start;
@@ -475,7 +464,7 @@ footer {
 	display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 	.nav-ul {
 		position: absolute;
 		transition: 1s;
@@ -488,20 +477,20 @@ footer {
 		padding: 2em;
 		gap: 5em;
 	}
-	/*
+
 	.nav-li {
-		border-bottom: red solid 2px;
+		border-bottom: #fff solid 2px;
 		transition: 0.2s;
 	}
-*/
+
 	html.toggle {
-		background-color: red;
+		background-color: #fff;
 	}
-	/*
+
 	.nav-li:hover {
 		border-bottom: 6px solid #5882fa;
 	}
-*/
+
 	html.show {
 		overflow-y: hidden;
 	}
@@ -528,6 +517,7 @@ footer {
 		display: block;
 		width: 25px;
 		cursor: pointer;
+		background-image: url('assets/menu-hamburguer.svg');
 	}
 	.menu-hamburguer.show {
 		position: relative;
@@ -605,20 +595,25 @@ footer {
 	}
 	.container-experiencias {
 		flex-direction: column;
-		padding: 18em 0;
+		align-content: center;
+		padding: 1em;
 	}
 
 	.h2-experiencia {
 		text-align: center;
 		position: relative;
-		top: 380px;
+		top: flex;
 		margin-left: 2em;
 	}
 
 	.item-experiencia {
-		width: 100%;
+		padding: 0;
+		display: inline-flex;
 	}
-	.imagem-experiencia-2 > img {
-		width: 360px;
+
+	.flex-experiencia {
+		width: 100%;
+		align-content: center;
+		padding: 1em;
 	}
 }
