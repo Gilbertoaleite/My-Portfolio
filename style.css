@@ -617,3 +617,8 @@ footer {
 		padding: 1em;
 	}
 }
+span,
+a {
+	color: #5882fa;
+	text-decoration: none;
+}
