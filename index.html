@@ -1,0 +1,423 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1"
+		/>
+		<link href="style.css" rel="stylesheet" />
+		<title>Portfólio Gilberto</title>
+	</head>
+	<body>
+		<main>
+			<header class="header">
+				<!-- <div class="topnav">
+					<a href="#home"></a>
+					<div id="myLinks">
+						<a href="#news">News</a>
+						<a href="#contact">Contact</a>
+						<a href="#about">About</a>
+					</div>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div> -->
+				<nav>
+					<ul id="menuHamburguer" class="nav-ul">
+						<li><a href="#sobre-mim" class="nav-li">Sobre Mim</a></li>
+						<li><a href="#projetos" class="nav-li">Projetos</a></li>
+						<li><a href="#habilidades" class="nav-li">Habilidades</a></li>
+						<li>
+							<a href="#experiencias" class="nav-li">Educação e Experiencias</a>
+						</li>
+					</ul>
+				</nav>
+				<label class="switch" title="Butão Modo Noturno">
+					<input type="checkbox" onclick="dayMode()" id="toggleSwitch" />
+					<span class="slider round"></span>
+				</label>
+			</header>
+
+			<section id="inicial">
+				<div class="container-inicial">
+					<div class="texto-inicial">
+						<p>Olá, meu nome é</p>
+						<h1 id="userName">Gilberto de Araujo Leite</h1>
+						<p id="userBio">
+							Desenvolvedor Front-end JR,  
+							React e Next JS, em transição de carreira. 
+						</p>
+						<a
+							rel="noreferrer noopener"
+							href="https://api.whatsapp.com/send?phone=+55%2011%2096347-1286&text=Sua%20mensagem"
+							class="whatsapp"
+							><img
+								src="assets/whatsapp-brands.svg"
+								alt="Icone whatsapp"
+							/>Whatsapp</a
+						>
+					</div>
+					<div class="imagem-inicial">
+						<img src="assets/dev.svg" alt="imagem de um boneco com notebook" />
+					</div>
+				</div>
+			</section>
+			<section id="sobre-mim" class="sectOff">
+				<div class="container-sobre">
+					<div id="UserImage" class="imagem-sobre">
+						<img
+							src="https://github.com/gilbertoaleite.png"
+							alt="Foto pessoal"
+						/>
+					</div>
+					<div class="texto-sobre">
+						<h2>Sobre mim</h2>
+						<p>
+							Olá! Sou um estudante de desenvolvimento e apaixonado por
+							tecnologia e inovação! Sou do estado de São Paulo e,
+							frequentemente, participo dos bootcamps da Digital Innovation one
+							e de outras escolas como: RocketSeat, Alura, e TreinaWeb. Possuo conhecimentos
+							a respeito de front-end React e back-end com Django e Node JS, concluí 2 semestres do curso
+							de Análise e desenvolvimento de sistema pela universidade Uninove.
+							Infelizmente, por questões financeiras, tive que trancar, mas
+							pretendo voltar a estudar assim que a minha situação financeira
+							melhorar, enquanto isso estou estudando online os cursos de desenvolvimentos e me aperfeiçoando cada vez mais.
+							É um prazer lhe conhecer!
+						</p>
+						<div class="botoes-sobre">
+							<a
+								rel="noreferrer noopener"
+								target="_blank"
+								class="botao"
+								href="https://www.linkedin.com/in/gilbertoaleite/"
+								><img
+									src="assets/linkedin-brands.svg"
+									title="Meu LinkedIn"
+								/>Linkedin</a
+							>
+							<a
+								title="Baixar o meu currículo"
+								rel="noreferrer noopener"
+								target="_blank"
+								class="botao"
+								href="/assets/CurriculoGilberto.pdf"
+								><img
+									src="assets/Vector.svg"
+									title="Download em pdf"
+								/>Currículo</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="projetos">
+				<h2 style="margin: 1em 0; text-align: center">Projetos</h2>
+				<div class="container-projetos">
+					<div class="item-projeto">
+						<h3>Resgate</h3>
+						<p>
+							Joguinho feito durante o bootcamp JavaScript Game Developer da
+							Digital Innovation One
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://jogo-helicoptero.vercel.app/"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>O Mentalista Game</h3>
+						<p>
+							Pagina o mentalista foi desenvolvido na imersão dev da Alura,
+							sendo um jogo de escolher números aleatórios.
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://codepen.io/gilbertoaleite/full/XWgzdBE"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>Projeto e-diarista | TreinaWeb</h3>
+						<p>
+							Projeto foi feito um site fictício, de procura de diaristas, e foi
+							feito usando o React e para api foi ultilizado o Python com o
+							Django.
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://e-diaristas-gilbertoaleite.vercel.app"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>Dashboard de Vendas</h3>
+						<p>
+							Desenvolvido o dashboard de vendas com Spring e React a parte
+							FrontEnd, feito na primeira aula da semana Spring React do
+							DevSuperior.
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://gilberto-dsvendas.netlify.app"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>Automatizando com Python</h3>
+						<p>
+							Automatizando com Python, programei para abrir o chrome e acessar
+							a pagina da Dio.me Inc. e acessa o bootcamp da Impulso
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://www.linkedin.com/feed/update/urn:li:activity:6859915957129777154"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>NETFLIX-Live</h3>
+						<p>
+							Foi desenvolvido em html e com o bootstrap o meu primeiro projeto
+							da Dio. Obs o Navegador pode mostrar como site perigoso, só
+							ignorar não está sendo pedindo nenhuma informação.
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://gilbertoaleite-netflix-clone.netlify.app/index.html"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>TreinaCook - Receitas</h3>
+						<p>
+							Foi desenvolvido em Next.js e gerado para a pagina estática que
+							deixou o site muito mais rápido.
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://gilbertoaleite-receitas-next-js.vercel.app/"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>Site de Controle Financeiro Nikel</h3>
+						<p>
+							Desenvolvi esse site de controle financeiro assistindo as aulas do
+							codaí(Growdev), dar pra criar conta, e logar no site e lançar
+							entrada e saida de dinheiro, não foi usado Api, está sendo
+							armazendo a senha e os dados no navegador local do cliente.
+						</p>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://gilbertoaleite-codai.netlify.app/"
+							class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+					<div class="item-projeto">
+						<h3>Em Breve</h3>
+						<p>Em Desenvolvimento.</p>
+						<a rel="noreferrer noopener" target="_blank" href="#" class="botao"
+							>Link do Projeto</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="sectOff" id="habilidades">
+			<div class="container-habilidades">
+				<div class="texto-habilidades">
+					<h2>Habilidades</h2>
+					<p>
+						Possuo conhecimentos básico de Front e Back-end, Meus conhecimentos
+						de front-end incluem HTML, CSS, JavaScript e React inicial. Meus
+						conhecimentos de Back-end incluem, Python, PHP, estudando automações
+						e crud com Python, criações de bots de telegram e discord, entre
+						outros.
+					</p>
+				</div>
+				<div class="icones-habilidades">
+					<div class="moldura-icone html">
+						<img src="assets/icon-html.svg" alt="Icone HTML" />
+						<p>HTML</p>
+					</div>
+					<div class="moldura-icone css">
+						<img src="assets/icon-css.svg" alt="Icone CSS" />
+						<p>CSS3</p>
+					</div>
+					<div class="moldura-icone python">
+						<img src="assets/icon-python.svg" alt="Icone Python" />
+						<p>Python</p>
+					</div>
+					<div class="moldura-icone javascript">
+						<img src="assets/icon-js.svg" alt="Icone JavaScript" />
+						<p>JavaScript</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="experiencias">
+			<h2 class="h2-experiencia">Educação e Experiências</h2>
+			<div class="container-experiencias">
+				<div class="imagem-experiencia"></div>
+				<div class="imagem-experiencia-2"></div>
+				<div class="flex-experiencia">
+					<div class="item-experiencia">
+						<div class="faixa-item-experiencia">
+							<h3>Bootcamps Digital Innovation One</h3>
+						</div>
+						<p>Certificados dos bootcamp que podem ser conferido abaixo:</p>
+						<p>
+							<a
+								rel="noreferrer noopener"
+								class="item-experiencia"
+								target="_blank"
+								href="https://certificates.digitalinnovation.one/C49C197B"
+								title="Para visualizar o certificado"
+								><span>1-</span></a
+							>
+							Bootcamp Decola Tech da Avanade
+						</p>
+						<p>
+							<a
+								rel="noreferrer noopener"
+								class="item-experiencia"
+								target="_blank"
+								href="https://www.dio.me/certificate/1D2F44C4"
+								title="Para visualizar o certificado"
+								><span>2-</span></a
+							>
+							Bootcamp Decola Tech 2 da Avanade
+						</p>
+						<p>
+							<a
+								rel="noreferrer noopener"
+								class="item-experiencia"
+								target="_blank"
+								href="https://certificates.digitalinnovation.one/96458B6A"
+								title="Para visualizar o certificado"
+								><span>3-</span></a
+							>
+							Bootcamp Java Developer
+						</p>
+						<p>
+							<a
+								rel="noreferrer noopener"
+								class="item-experiencia"
+								target="_blank"
+								href="https://certificates.digitalinnovation.one/0F34F238"
+								title="Para visualizar o certificado"
+								><span>4-</span></a
+							>
+							Bootcamp Spread Java Developer
+						</p>
+						<p>
+							<a
+								rel="noreferrer noopener"
+								class="item-experiencia"
+								target="_blank"
+								href="https://certificates.digitalinnovation.one/D8A48E2E"
+								title="Para visualizar o certificado"
+								><span>5-</span></a
+							>
+							Bootcamp Impulso React Web Developer
+						</p>
+						<p>
+							<a
+								rel="noreferrer noopener"
+								class="item-experiencia"
+								target="_blank"
+								href="https://certificates.digitalinnovation.one/9EA1467E"
+								title="Para visualizar o certificado"
+								><span>6-</span></a
+							>
+							Bootcamp Inter Frontend Developer
+						</p>
+					</div>
+					<div class="item-experiencia">
+						<div class="faixa-item-experiencia">
+							<h3>Universidade nove de julho | Uninove</h3>
+						</div>
+						<p>
+							Análise e desenvolvimentos de sistemas, cursei 2 semestre, no
+							momento está trancado, por questões financeiras.
+						</p>
+					</div>
+				</div>
+				<div class="flex-experiencia reverse">
+					<div class="item-experiencia">
+						<div class="faixa-item-experiencia">
+							<h3>Uma semana de Imersão Dev | Alura</h3>
+						</div>
+						<p>
+							Participei da semana ImersãoDev da Alura, desenvolvendo diversos
+							conteúdos, e o meu certificard está hospedado no
+							<a
+								rel="noreferrer noopener"
+								target="_blank"
+								title="página certificard"
+								href="https://gilbertoaleite.github.io/certificard/"
+								><span>GitHub</span></a
+							>
+						</p>
+					</div>
+					<div class="item-experiencia">
+						<div class="faixa-item-experiencia">
+							<h3>Inglês básico 2 | Wizard</h3>
+						</div>
+						<p>
+							Inglês básico 2, nivel de conversação, escrita e entendimento.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+			<footer>
+				<p>Desenvolvido por Gilberto A Leite</p>
+				<div id="socialLinks">
+					<div class="instagram">
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://instagram.com/gilbertoaleite/"
+							><img src="assets/instagram.svg" alt="Icone-Instagram"
+						/></a>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/gilbertoaleite"
+							><img src="assets/github.svg" alt="Icone-Github"
+						/></a>
+						<a
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://linkedin.com/in/gilbertoaleite"
+							><img src="assets/linkedin.svg" alt="Icone-LinkedIn"
+						/></a>
+					</div>
+				</div>
+				<script src="script.js"></script>
+			</footer>
+		</section>
+	</body>
+</html>
