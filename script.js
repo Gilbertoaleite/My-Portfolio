@@ -41,31 +41,31 @@ function myFunction() {
 }
 
 //Menu mobile falta ajustar
-const menuHamburguer = document.querySelector('#menuHamburguer');
+// const menuHamburguer = document.querySelector('#menuHamburguer');
 
-const navUl = document.querySelector('.nav-ul');
-const header = document.querySelector('.header');
-const toggle = document.querySelector('.switch');
-const html = document.querySelector('html');
-menuHamburguer.addEventListener('click', () => {
-	navUl.classList.toggle('show');
-	header.classList.toggle('show');
-	menuHamburguer.classList.toggle('menu-hambuguer');
-	toggle.classList.toggle('show');
-	html.classList.toggle('show');
-	console.log(header);
-});
+// const navUl = document.querySelector('.nav-ul');
+// const header = document.querySelector('.header');
+// const toggle = document.querySelector('.switch');
+// const html = document.querySelector('html');
+// menuHamburguer.addEventListener('click', () => {
+// 	navUl.classList.toggle('show');
+// 	header.classList.toggle('show');
+// 	menuHamburguer.classList.toggle('menu-hambuguer');
+// 	toggle.classList.toggle('show');
+// 	html.classList.toggle('show');
+// 	console.log(header);
+// });
 
 //Fecha menu mobile no redirecionar
-for (var i = 0; i < itemsNav.length; i++) {
-	itemsNav[i].addEventListener('click', () => {
-		navUl.classList.toggle('show');
-		header.classList.toggle('show');
-		menuHamburguer.classList.toggle('show');
-		toggle.classList.toggle('show');
-		html.classList.toggle('show');
-	});
-}
+// for (var i = 0; i < itemsNav.length; i++) {
+// 	itemsNav[i].addEventListener('click', () => {
+// 		navUl.classList.toggle('show');
+// 		header.classList.toggle('show');
+// 		menuHamburguer.classList.toggle('show');
+// 		toggle.classList.toggle('show');
+// 		html.classList.toggle('show');
+// 	});
+// }
 
 //Função dos butões experiencia
 itemsHabilidade.forEach(function (item) {
@@ -86,6 +86,12 @@ itemsHabilidade.forEach(function (item) {
 
 		if (tipoItem.contains('css')) {
 			itemsHabilidade[3].classList.toggle('show-hab');
+		}
+		if (tipoItem.contains('react')) {
+			itemsHabilidade[4].classList.toggle('show-hab');
+		}
+		if (tipoItem.contains('next')) {
+			itemsHabilidade[5].classList.toggle('show-hab');
 		}
 	});
 });

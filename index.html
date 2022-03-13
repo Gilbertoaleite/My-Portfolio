@@ -9,25 +9,17 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, minimum-scale=1"
 		/>
-		<link href="style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="./styles/reset.css">
+		<link rel="stylesheet" href="./styles/responsividade.css">
 		<title>Portfólio Gilberto</title>
 	</head>
 	<body>
 		<main>
 			<header class="header">
-				<!-- <div class="topnav">
-					<a href="#home"></a>
-					<div id="myLinks">
-						<a href="#news">News</a>
-						<a href="#contact">Contact</a>
-						<a href="#about">About</a>
-					</div>
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-						<i class="fa fa-bars"></i>
-					</a>
-				</div> -->
-				<nav>
-					<ul id="menuHamburguer" class="nav-ul">
+					<!-- menu desktop -->
+					<nav>
+					<ul  class="nav-ul">
 						<li><a href="#sobre-mim" class="nav-li">Sobre Mim</a></li>
 						<li><a href="#projetos" class="nav-li">Projetos</a></li>
 						<li><a href="#habilidades" class="nav-li">Habilidades</a></li>
@@ -51,6 +43,7 @@
 							Desenvolvedor Front-end JR, React e Next JS, em transição de
 							carreira.
 						</p>
+						<img src="'./assets/menu-hamburguer.svg'" alt="" >
 						<a
 							rel="noreferrer noopener"
 							href="https://api.whatsapp.com/send?phone=+55%2011%2096347-1286&text=Sua%20mensagem"
@@ -62,7 +55,7 @@
 						>
 					</div>
 					<div class="imagem-inicial">
-						<img src="assets/dev.svg" alt="imagem de um boneco com notebook" />
+						<img class="imagem-inicial" src="assets/dev.svg" alt="imagem de um boneco com notebook" />
 					</div>
 				</div>
 			</section>
@@ -79,9 +72,9 @@
 						<p>
 							Olá! sou desenvolvedor Nextjs e React, apaixonado por tecnologia e
 							inovação! sou do estado de São Paulo, e frequentemente participo
-							dos bootcamp da Digital Innovation one, e de outras escolas como:
+							dos bootcamp da Digital Innovation one,<p> e de outras escolas como:
 							RocketSeat, Alura e TreinaWeb. Possuo experiencias em projetos em
-							front-end Nextjs, React, back-end com Django e Node JS, no momento
+							front-end Nextjs e React,</p> back-end com Django e Node JS, no momento
 							estou estudando online os cursos de formação em desenvolvimento e
 							me aperfeiçoando cada vez mais em Next e React. É um prazer lhe
 							conhecer!
@@ -112,8 +105,8 @@
 					</div>
 				</div>
 			</section>
-			<section id="projetos">
-				<h2 style="margin: 1em 0; text-align: center">Projetos</h2>
+			<section class="projetos" id="projetos">
+				<h2 >Projetos</h2>
 				<div class="container-projetos">
 					<div class="item-projeto">
 						<h3>Resgate</h3>
@@ -122,10 +115,10 @@
 							Digital Innovation One
 						</p>
 						<a
+							class="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://jogo-helicoptero.vercel.app/"
-							class="botao"
 							>Link do Projeto</a
 						>
 					</div>
@@ -191,8 +184,7 @@
 						<h3>NETFLIX-Live</h3>
 						<p>
 							Foi desenvolvido em html e com o bootstrap o meu primeiro projeto
-							da Dio. Obs o Navegador pode mostrar como site perigoso, só
-							ignorar não está sendo pedindo nenhuma informação.
+							da Dio. 
 						</p>
 						<a
 							rel="noreferrer noopener"
@@ -221,8 +213,7 @@
 						<p>
 							Desenvolvi esse site de controle financeiro assistindo as aulas do
 							codaí(Growdev), dar pra criar conta, e logar no site e lançar
-							entrada e saida de dinheiro, não foi usado Api, está sendo
-							armazendo a senha e os dados no navegador local do cliente.
+							entrada e saida de dinheiro.
 						</p>
 						<a
 							rel="noreferrer noopener"
@@ -233,9 +224,9 @@
 						>
 					</div>
 					<div class="item-projeto">
-						<h3>Em Breve</h3>
-						<p>Em Desenvolvimento.</p>
-						<a rel="noreferrer noopener" target="_blank" href="#" class="botao"
+						<h3>ig.news</h3>
+						<p>Projeto em Nextjs está em desenvolvimento na aula da Rocketseat React Ignite.</p>
+						<a rel="noreferrer noopener" target="_blank" href="https://ig-news-rocketseat.vercel.app/" class="botao"
 							>Link do Projeto</a
 						>
 					</div>
@@ -268,14 +259,22 @@
 						<img src="assets/icon-js.svg" alt="Icone JavaScript" />
 						<p>JavaScript</p>
 					</div>
+					<div class="moldura-icone react">
+						<img src="assets/icon-react.svg" alt="Icone React" />
+						<p>React.js</p>
+					</div>
+					<div class="moldura-icone next">
+						<img src="assets/icon-next-js.svg" alt="Icone Nextjs" />
+						<p>Next.js</p>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section id="experiencias">
-			<h2 class="h2-experiencia">Educação e Experiências</h2>
 			<div class="container-experiencias">
-				<div class="imagem-experiencia"></div>
-				<div class="imagem-experiencia-2"></div>
+				<h2>Educação e Experiências</h2>
+				<!-- <div class="imagem-experiencia"></div>
+				<div class="imagem-experiencia-2"></div> -->
 				<div class="flex-experiencia">
 					<div class="item-experiencia">
 						<div class="faixa-item-experiencia">
@@ -362,18 +361,11 @@
 				<div class="flex-experiencia reverse">
 					<div class="item-experiencia">
 						<div class="faixa-item-experiencia">
-							<h3>Uma semana de Imersão Dev | Alura</h3>
+							<h3>Universidade nove de julho | Uninove</h3>
 						</div>
 						<p>
-							Participei da semana ImersãoDev da Alura, desenvolvendo diversos
-							conteúdos, e o meu certificard está hospedado no
-							<a
-								rel="noreferrer noopener"
-								target="_blank"
-								title="página certificard"
-								href="https://gilbertoaleite.github.io/certificard/"
-								><span>GitHub</span></a
-							>
+							Análise e desenvolvimentos de sistemas, cursei 2 semestre, 
+							no momento está com a metricula trancada, e pretendo retorna o mais breve póssivel.
 						</p>
 					</div>
 					<div class="item-experiencia">
@@ -381,14 +373,14 @@
 							<h3>Inglês básico 2 | Wizard</h3>
 						</div>
 						<p>
-							Inglês básico 2, nivel de conversação, escrita e entendimento.
+							Inglês básico II nível de conversação, escrita e entendimento.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div></div>
 			<footer>
-				<p>Desenvolvido por Gilberto A Leite</p>
+				<p>Desenvolvido por Gilberto A Leite  2022 &copy;</p>
 				<div id="socialLinks">
 					<div class="instagram">
 						<a
