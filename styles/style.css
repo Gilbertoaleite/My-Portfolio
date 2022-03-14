@@ -1,6 +1,6 @@
 /** @format */
-:root{
-	--black: rgba(35,35,35, 0.4);
+:root {
+	--black: rgba(35, 35, 35, 0.4);
 }
 html {
 	scroll-behavior: smooth;
@@ -24,6 +24,9 @@ body {
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#btn-mobile {
+	display: none;
+}
 body.background-day {
 	background: #fff;
 	color: #333333;
@@ -33,34 +36,51 @@ body.background-day {
 	height: 70px;
 	/* background: rgba(35,35,35, 0.4); */
 	background: var(--black);
+	padding: 1rem;
 	display: flex;
 	align-items: center;
-	justify-content: end;
-	overflow-x: hidden;
+	justify-content: flex-end;
 }
 
 .header.background-day-gray {
 	background-color: #ebebeb;
+	color: #111111;
 }
 
-/* .menu-hamburguer {
-	display: none;
-} */
-.nav-ul {
+.header.background-day-gray > a {
+	color: #111111;
+	font-size: 1em;
+	font-weight: 700;
+	
+}
+
+#menu {
+	display: flex;
+	gap: 1rem;
+	margin: 2em 2em 2em 0;
+	transition: 0.2s;
+}
+
+#menu a {
+	text-decoration: none;
+	display: block;
+	padding: 0.7rem;
+}
+
+/* .nav-ul {
 	display: flex;
 	gap: 2em;
 	list-style: none;
 	margin-right: 4em;
 	max-width: 1400px;
-}
+} */
 
 .nav-li {
 	color: white;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 1em;
 	font-weight: semibold;
-	transition: 0.5s;
-	width: 10px;
+	transition: 0.9s;
 }
 
 .nav-li.text-day {
@@ -68,7 +88,7 @@ body.background-day {
 }
 
 .nav-li:hover {
-	border-bottom: #5882fa solid 1px;
+	border-bottom: solid 1px #5882fa;
 }
 
 .switch {
@@ -206,11 +226,11 @@ h2 {
 	transition: 0.5s;
 	width: 100%;
 	margin: 0 auto;
-
 }
 
 .sectOff.background-day-gray {
 	background-color: #ebebeb;
+	color: #333333;
 }
 
 .container-sobre {
@@ -326,7 +346,7 @@ h2 {
 }
 
 .item-projeto:hover {
-	border:2px solid #5882fa;
+	border: 2px solid #5882fa;
 	filter: brightness(0.8);
 }
 
@@ -342,17 +362,17 @@ h2 {
 .titulo-habilidades > h2 {
 	display: flex;
 	align-items: flex-start;
-	justify-content:center;
+	justify-content: center;
 	text-align: center;
 	font-size: 1.5em;
-	margin: 1em auto;
+	margin: 0;
 }
 
 .icones-habilidades {
 	display: flex;
 	justify-content: space-around;
-	align-items:center;
-	text-align:center;
+	align-items: center;
+	text-align: center;
 	flex-direction: row;
 	margin: 1em auto;
 	width: 80%;
@@ -382,13 +402,13 @@ h2 {
 }
 
 .moldura-icone.show-hab {
-	border-bottom:solid 50px #5882fa ;
+	border-bottom: solid 50px #5882fa;
 	padding: 2em;
 	transition: 0.3s;
 }
 
 .moldura-icone.show-hab:hover {
-	border-bottom:solid 50px #5882fa;
+	border-bottom: solid 50px #5882fa;
 	filter: brightness(0.8);
 }
 .moldura-icone > p {
@@ -412,7 +432,6 @@ h2 {
 	color: white;
 }
 
-
 .container-experiencias {
 	max-width: 1300px;
 	display: flex;
@@ -435,7 +454,7 @@ h2 {
 	width: 75%;
 	margin: 2em auto;
 	/* background-color: #2c2c2c; */
-	background: rgba(35,35,35, 0.4);
+	background: rgba(35, 35, 35, 0.4);
 	padding: 2rem;
 	border-radius: 9px;
 	transition: 0.5s;
@@ -486,28 +505,28 @@ footer {
 	margin: 1em auto;
 	background: #5882fa;
 	gap: 2em;
-	justify-content:center;
+	justify-content: center;
 	list-style: none;
 	align-items: center;
 	text-align: center;
 	color: #fffeee;
 }
-.social{
-display:inline-block;
-align-items:center;
-margin: 1em auto;
-width: 5%;
-padding: 0.5em 0.5em 0 0.5em;
+.social {
+	display: inline-block;
+	align-items: center;
+	margin: 1em auto;
+	width: 5%;
+	padding: 0.5em 0.5em 0 0.5em;
 }
-.social:hover{
-background: cornflowerblue;
+.social:hover {
+	background: cornflowerblue;
 }
 span,
 a {
 	color: #5882fa;
 	text-decoration: none;
 }
-
+/* 
 .mobile {
 	display: none;
-}
+} */

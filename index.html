@@ -9,7 +9,7 @@
 				name="viewport"
 				content="width=device-width, initial-scale=1, minimum-scale=1"
 			/>
-			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="./styles/style.css">
 			<link rel="stylesheet" href="./styles/reset.css">
 			<link rel="stylesheet" href="./styles/responsividade.css">
 			<title>Portfólio Gilberto</title>
@@ -17,16 +17,18 @@
 		<body>
 			<main>
 				<header class="header">
-						<!-- menu desktop -->
-						<nav>
-						<ul  class="nav-ul">
-							<li><a href="#sobre-mim" class="nav-li">Sobre Mim</a></li>
-							<li><a href="#projetos" class="nav-li">Projetos</a></li>
-							<li><a href="#habilidades" class="nav-li">Habilidades</a></li>
-							<li>
-								<a href="#experiencias" class="nav-li">Educação e Experiencias</a>
-							</li>
-						</ul>
+					<nav id="nav-menu">
+						<!-- menu mobile -->
+                  <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="#menu" aria-expanded="false"> Menu
+                     <span id="hamburguer"></span>
+                  </button>
+
+							<!-- menu desktop -->
+						<ul class='nav-menu' id="menu" role="menu">
+							<li id="lista-menu" ><a href="#sobre-mim" class="nav-li">Sobre Mim</a></li>
+							<li id="lista-menu1"><a href="#projetos" class="nav-li">Projetos</a></li>
+							<li id="lista-menu2" ><a href="#habilidades" class="nav-li">Habilidades</a></li>
+							<li id="lista-menu3"><a href="#experiencias" class="nav-li">Educação e Experiencias</a>		</li>					</li>						</ul>
 					</nav>
 					<label class="switch" title="Butão Modo Noturno">
 						<input type="checkbox" onclick="dayMode()" id="toggleSwitch" />
@@ -40,10 +42,9 @@
 							<p>Olá, meu nome é</p>
 							<h1 id="userName">Gilberto de Araujo Leite</h1>
 							<p id="userBio">
-								Desenvolvedor Front-end JR, React e Next JS, em transição de
-								carreira.
+								Desenvolvedor Front-end JR, React e Next.js.
 							</p>
-							<img src="'./assets/menu-hamburguer.svg'" alt="" >
+	
 							<a
 								rel="noreferrer noopener"
 								href="https://api.whatsapp.com/send?phone=+55%2011%2096347-1286&text=Sua%20mensagem"
@@ -431,10 +432,12 @@
 							</p>
 						</div>
 					</div>
-					<script src="script.js"></script>
+					<script src="Scripts/main.js"></script>
+					<script src="Scripts/menu-mobile.js"></script>
+					
 				</section>
 				<footer>
-					<p>Desenvolvido por Gilberto A Leite  2022 &copy;</p>
+					<p>&copy; Desenvolvido por Gilberto A Leite  2022 </p>
 					
 						<div  class="social">
 							<a

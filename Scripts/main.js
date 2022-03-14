@@ -8,7 +8,7 @@ const flexExperiencia = document.querySelectorAll('.flex-experiencia');
 function dayMode() {
 	document.querySelector('body').classList.toggle('background-day');
 	document.querySelector('.header').classList.toggle('background-day-gray');
-	document.querySelector('.nav-ul').classList.toggle('background-day-gray');
+	document.querySelector('.nav-menu').classList.toggle('background-day-gray');
 
 	for (var i = 0; i < sectOff.length; i++) {
 		sectOff[i].classList.toggle('background-day-gray');
@@ -68,30 +68,30 @@ function myFunction() {
 // }
 
 //Função dos butões experiencia
-itemsHabilidade.forEach(function (item) {
-	item.addEventListener('click', function (e) {
-		tipoItem = e.currentTarget.classList;
+// itemsHabilidade.forEach(function (item) {
+// 	item.addEventListener('click', function (e) {
+// 		tipoItem = e.currentTarget.classList;
 
-		if (tipoItem.contains('html')) {
-			itemsHabilidade[0].classList.toggle('show-hab');
-		}
+// 		if (tipoItem.contains('html')) {
+// 			itemsHabilidade[0].classList.toggle('show-hab');
+// 		}
 
-		if (tipoItem.contains('python')) {
-			itemsHabilidade[1].classList.toggle('show-hab');
-		}
+// 		if (tipoItem.contains('python')) {
+// 			itemsHabilidade[1].classList.toggle('show-hab');
+// 		}
 
-		if (tipoItem.contains('javascript')) {
-			itemsHabilidade[2].classList.toggle('show-hab');
-		}
+// 		if (tipoItem.contains('javascript')) {
+// 			itemsHabilidade[2].classList.toggle('show-hab');
+// 		}
 
-		if (tipoItem.contains('css')) {
-			itemsHabilidade[3].classList.toggle('show-hab');
-		}
-		if (tipoItem.contains('react')) {
-			itemsHabilidade[4].classList.toggle('show-hab');
-		}
-		if (tipoItem.contains('next')) {
-			itemsHabilidade[5].classList.toggle('show-hab');
-		}
-	});
-});
+// 		if (tipoItem.contains('css')) {
+// 			itemsHabilidade[3].classList.toggle('show-hab');
+// 		}
+// 		if (tipoItem.contains('react')) {
+// 			itemsHabilidade[4].classList.toggle('show-hab');
+// 		}
+// 		if (tipoItem.contains('next')) {
+// 			itemsHabilidade[5].classList.toggle('show-hab');
+// 		}
+// 	});
+// });
