@@ -15,5 +15,8 @@
 	"bugs": {
 		"url": "https://github.com/gilbertoaleite/Portfolio/issues"
 	},
-	"homepage": "https://github.com/gilbertoaleite/Portfolio"
+	"homepage": "https://github.com/gilbertoaleite/Portfolio",
+	"dependencies": {
+		"http-server": "^14.1.1"
+	}
 }
