@@ -72,7 +72,8 @@ export const Container = styled.div`
 	transition: 0.4s;
 	position: absolute;
 	-webkit-transition: 0.4s;
-	background-color: var(--background-day);
+	
+	background: var(--background);
     
     &:before {
         left: 4px;
@@ -84,15 +85,24 @@ export const Container = styled.div`
         position: absolute;
         -webkit-transition: 0.4s;
         box-shadow: 0 0 20px yellow;
-		background: var(--background);
+		
         background: rgb(255, 255, 255);
-        /* background-image: url('assets/moon-regular.svg'); */
+        background-image: url('assets/img/moon-regular.svg'); 
+		
+		
     }
 }
+.slider.round {
+	border-radius: 34px;
+
+	&:before{
+		border-radius: 50% ;
+		}
+	}
 
 
 input:checked + .slider {
-	background: var(--background);
+	background-color: var(--background-day);
 	
 }
 
@@ -101,17 +111,11 @@ input:checked + .slider:before {
 	transform: translateX(26px);
 	-ms-transform: translateX(26px);
 	-webkit-transform: translateX(26px);
+	background-image: url('../assets/img/sun-regular.svg');
 	
-	/* sol aqui */
 
 }
 
-.slider.round {
-	border-radius: 34px;
 
-	&:before{
-		border-radius: 50% ;
-		}
-	}
 }
 `

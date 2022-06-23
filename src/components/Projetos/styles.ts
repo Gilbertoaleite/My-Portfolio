@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 .item-projeto {
 	width: 30%;
-	padding: 1em 1em;
+	padding: 0.5em 0.5em;
 	background: var(--background-containers);
 	display: flex;
 	flex-direction: column;
@@ -30,8 +30,6 @@ export const Container = styled.div`
 	filter: brightness(0.8);
 }
 
-	
-	
 	.botao {
 	display:flex;
 	width: 100%;

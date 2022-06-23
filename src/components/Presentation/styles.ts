@@ -46,7 +46,7 @@ export const Container = styled.div`
 	justify-content: space-around;
 	font-weight: 700;
 	align-items: center;
-	font-size: 20px;
+	font-size: 1.3rem;
 	transition: 0.2s;
     
         &:hover {
@@ -55,7 +55,7 @@ export const Container = styled.div`
             }
         
     .imagem-inicial {
-	width: 50%;
+	width: 60%;
     
     }
     .imagem-inicial > img {

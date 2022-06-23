@@ -6,9 +6,8 @@ export const Container = styled.div`
 	.container-sobre {
 	display: flex;
 	width: 100%;
-	margin: 0 auto;
+	
 	padding: 2em 0;
-	display: flex;
 	justify-content: space-between;
 	max-width: 1400px;
 }
@@ -22,15 +21,17 @@ export const Container = styled.div`
 	border: #5882fa solid 4px;
 	background-color: #5882fa;
 	width: 50%;
-	margin: 4em 0 0 5rem;
+	
 }
 
 .texto-sobre {
-	width: 60%;
-	display: flex;
+	width: 80%;
+	text-align:left ;
+	justify-items:center ;
 	flex-direction: column;
+	margin-bottom: 1.5rem ;
 	gap: 0.9em;
-	margin-right: 1em;
+	
 	line-height: 1.5;
 	/* font-size: 1.2em; */
 	strong{
@@ -44,7 +45,7 @@ export const Container = styled.div`
 	text-align: center;
 	font-weight: 700;
 	gap: 1.5em;
-	margin: 0 auto;
+	margin: 2rem auto;
 }
 }
 `;

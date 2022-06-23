@@ -39,7 +39,7 @@ export function Header() {
                         </li>
                         </ul>
                     </nav>
-                    <label className="switch" title="Butão Modo Noturno">
+                    <label className="switch" title="Botão Modo Noturno">
                         <input type="checkbox" onClick={ e =>
                             setColor(color === 'var(--background-day)' ? 'var(--background)' : 'var(--background-day)' )} id="toggleSwitch" />
                         <span className="slider round">
