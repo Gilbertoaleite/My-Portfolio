@@ -22,7 +22,7 @@ export const Container = styled.div`
 .flex-experiencia {
 	display: flex;
 	justify-content: center;
-	width: 75%;
+	width: 98%;
 	margin: 2em auto;
 	/* background-color: #2c2c2c; */
 	background: var(--background-containers);
@@ -30,19 +30,19 @@ export const Container = styled.div`
 	border-radius: 9px;
 	transition: 0.5s;
 }
-.reverse {
+/* .reverse {
 	display: flex;
 	width: 77%;
 	justify-content: center;
 	margin: 0 auto;
 	gap: 1rem;
-}
+} */
 
 .item-experiencia {
 	/* width: 100%; */
 	text-align: center;
 	align-items: center;
-	text-align: justify;
+	text-align: left;
 	text-decoration: none;
 }
 

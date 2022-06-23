@@ -27,10 +27,12 @@ export const Container = styled.div`
 	display: flex;
 	transition: 0.2s;
 	margin: 2em 2em 2em 0;
-    a {
+    
+	a {
 	display: block;
 	padding: 0.7rem;
 	text-decoration: none;
+	margin-bottom: 4.5rem;
     }
 }
 

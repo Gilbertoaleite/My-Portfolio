@@ -9,8 +9,8 @@ export function Experiencias() {
             <section id="experiencias">
                 <div className="container-experiencias">
                     <h2>Educação e Experiências</h2>
-                    <div className="imagem-experiencia-2"></div>
-                    <div className="flex-experiencia reverse">
+                    {/* <div className="imagem-experiencia-2"></div> */}
+                    <div className="flex-experiencia ">
                         <div className="item-experiencia">
                             <div className="faixa-item-experiencia">
                                 <h3>Universidade nove de julho | Uninove</h3>
@@ -30,6 +30,7 @@ export function Experiencias() {
                         </div>
                     </div>
                 </div>
+            
             </section>
         </Container>
     )

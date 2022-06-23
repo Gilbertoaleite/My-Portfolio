@@ -6,31 +6,34 @@ export const Container = styled.div`
 	.container-sobre {
 	display: flex;
 	width: 100%;
-	
-	padding: 2em 0;
+	padding: 2rem 5rem 2rem 5rem;
 	justify-content: space-between;
 	max-width: 1400px;
+	
 }
 .texto-sobre > h2 {
 	font-size: 1.8em;
 	text-align: center;
+	margin-bottom: 2rem;
 }
 
 .imagem-sobre > img {
+	width: 50%;
 	border-radius: 50%;
 	border: #5882fa solid 4px;
 	background-color: #5882fa;
-	width: 50%;
+	margin-top: 25%;
+	
 	
 }
 
 .texto-sobre {
-	width: 80%;
+	width: 100%;
 	text-align:left ;
 	justify-items:center ;
 	flex-direction: column;
-	margin-bottom: 1.5rem ;
-	gap: 0.9em;
+	margin: 1.5rem 1.5rem 1.5rem 0 ;
+	gap: 0.5em;
 	
 	line-height: 1.5;
 	/* font-size: 1.2em; */

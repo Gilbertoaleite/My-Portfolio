@@ -1,12 +1,14 @@
 // import Image from 'next/image';
 // import sunImg  from "../../assets/img/sun-regular.svg";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Burger from './Burger';
+
 import { Container } from './styles'
 
 export function Header() {
 
-    const [color, setColor] = React.useState('var(--background)');
-    React.useEffect(() => {
+    const [color, setColor] = useState('var(--background)');
+    useEffect(() => {
         document.body.style.backgroundColor = color;
     }, [color]);
 
@@ -16,9 +18,8 @@ export function Header() {
                 <header className="header">
                     <nav id="nav-menu">
                         {/*  menu mobile  */ }
-                        <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="#menu" aria-expanded="false"> Menu
-                            <span id="hamburguer"></span>
-                        </button>
+                        <Burger />
+                        
                         {/* menu desktop */ }
                         <ul className='nav-menu' id="menu" role="menu">
 
