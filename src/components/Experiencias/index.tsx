@@ -9,15 +9,15 @@ export function Experiencias() {
             <section id="experiencias">
                 <div className="container-experiencias">
                     <h2>Educação e Experiências</h2>
-                    {/* <div className="imagem-experiencia-2"></div> */}
+                    {/* <div className="imagem-experiencia-2"></div> */ }
                     <div className="flex-experiencia ">
                         <div className="item-experiencia">
                             <div className="faixa-item-experiencia">
-                                <h3>Universidade nove de julho | Uninove</h3>
+                                <h3>Universidade Nove de Julho | Uninove</h3>
                             </div>
                             <p>
-                                Análise e desenvolvimentos de sistemas, cursei 2 semestre,
-                                no momento está com a metricula trancada, e pretendo retorna o mais breve póssivel.
+                                Análise e desenvolvimento de sistemas, cursei 2 semestres,
+                                no momento está com a matrícula trancada, pretendo retorna o mais breve póssivel.
                             </p>
                         </div>
                         <div className="item-experiencia">
@@ -30,7 +30,7 @@ export function Experiencias() {
                         </div>
                     </div>
                 </div>
-            
+
             </section>
         </Container>
     )
