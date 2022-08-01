@@ -1,13 +1,13 @@
-import Image from "next/image";
-import focaImg from '../../assets/img/projetos/foca-img.png';
-import iterImg from '../../assets/img/projetos/inter-img.png';
-import petImg from '../../assets/img/projetos/adote-pet-img.png';
-import barbeariaImg from '../../assets/img/projetos/barbearia-img.png';
-import netflixImg from '../../assets/img/projetos/netflix-img.png';
-import decoderImg from '../../assets/img/projetos/decoder-img.png';
-import alurinhaImg from '../../assets/img/projetos/alurinha-img.png';
-import treinacookImg from '../../assets/img/projetos/treinacook-img.png';
-import dashboardImg from '../../assets/img/projetos/dashboard-img.png';
+// import Image from "next/image";
+// import focaImg from '../../assets/img/projetos/foca-img.png';
+// import iterImg from '../../assets/img/projetos/inter-img.png';
+// import petImg from '../../assets/img/projetos/adote-pet-img.png';
+// import barbeariaImg from '../../assets/img/projetos/barbearia-img.png';
+// import netflixImg from '../../assets/img/projetos/netflix-img.png';
+// import decoderImg from '../../assets/img/projetos/decoder-img.png';
+// import alurinhaImg from '../../assets/img/projetos/alurinha-img.png';
+// import treinacookImg from '../../assets/img/projetos/treinacook-img.png';
+// import dashboardImg from '../../assets/img/projetos/dashboard-img.png';
 import { Container } from "./styles";
 
 export function Projetos() {
@@ -19,7 +19,7 @@ export function Projetos() {
 	{/* Projeto 1 */}
 					<div className="item-projeto">
 						<h3>Jogo da Foca</h3>
-						<Image src={focaImg}  />
+						<img src='https://i.imgur.com/NSn8zME.png' />
 						<p>
 							Joguinho feito durante a Challenger One da Oracle na Alura.
 						</p>
@@ -42,7 +42,7 @@ export function Projetos() {
 
 					<div className="item-projeto">
 						<h3>Clone do internet banking do Inter</h3>
-						<Image src={iterImg} />
+						<img src='https://i.imgur.com/RQjr7rG.png'/>
 						<p>
 						Foi desenvolvido o layout do banco Inter, durante o bootcamp Inter na DIO,
 						ultizando create react app.
@@ -65,7 +65,7 @@ export function Projetos() {
 	{/* Projeto 3 */}			
 				<div className="item-projeto">
 						<h3>Projeto Adote um Pet | TreinaWeb</h3>
-						<Image src={petImg } />
+						<img src='https://i.imgur.com/HyUFqPy.png' />
 						<p>
 							O projeto foi feito o durante o MultiStack da TreinaWeb, desenvolvido com
 							Next.js, @mui/material, axios e @emotion/styled, e ultilizado o Java com Spring boot para api.
@@ -86,7 +86,7 @@ export function Projetos() {
 	{/* Projeto 4 */}
 					<div className="item-projeto">
 						<h3>Dashboard de Vendas</h3>
-						<Image src={dashboardImg} />
+						<img src='https://i.imgur.com/tApf6gh.png' />
 						<p>
 							Desenvolvido o dashboard de vendas com Spring e React a parte
 							FrontEnd, feito na primeira aula da semana Spring React do
@@ -111,7 +111,7 @@ export function Projetos() {
 
 					<div className="item-projeto">
 						<h3>Alurinha</h3>
-						<Image src={alurinhaImg} />
+						<img src='https://i.imgur.com/YEQPAPk.png' />
 						<p>
 						Alurinha, aula de flexbox da Alura.
 						</p>
@@ -134,7 +134,7 @@ export function Projetos() {
 {/* Projeto 6 */}
 					<div className="item-projeto">
 						<h3>NETFLIX Clone</h3>
-						<Image src={netflixImg} />
+						<img src='https://i.imgur.com/l1E066x.png' />
 						<p>
 							Foi desenvolvido em html e com o bootstrap foi o meu primeiro projeto
 							da Dio.
@@ -157,7 +157,7 @@ export function Projetos() {
 {/* Projeto 7 */}
 					<div className="item-projeto">
 						<h3>TreinaCook - Receitas</h3>
-						<Image src={treinacookImg} />
+						<img src='https://i.imgur.com/Iwrek7d.png' />
 						<p>
 							Foi desenvolvido em Next.js e gerado para a pagina estática que
 							deixou o site muito mais rápido.
@@ -179,7 +179,7 @@ export function Projetos() {
 {/* Projeto 8 */}
 					<div className="item-projeto">
 						<h3>Barbearia Alura</h3>
-						<Image src={barbeariaImg}  />
+						<img src='https://i.imgur.com/xUS7UvA.png'  />
 						<p>
 						Barbearia Alura, site fictício de uma Barbearia desenvolvido na aula de front-end da Alura
 						</p>
@@ -200,7 +200,7 @@ export function Projetos() {
 {/* Projeto 9 */}
 					<div className="item-projeto">
 						<h3>Decodificador de texto</h3>
-						<Image src={decoderImg} />
+						<img src='https://i.imgur.com/7BNWeK8.png' />
 						<p>Challenge Oracle ONE Lógica de Programação 2022 </p>
 						<a
 							className="botao"
@@ -220,5 +220,5 @@ export function Projetos() {
 			</section>
 
 		</Container>
-	)
-};
+	);
+}
