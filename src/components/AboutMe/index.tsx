@@ -50,7 +50,7 @@ export function AboutMe() {
 								title="Meu Currículo no ondrive"
 								rel="noreferrer noopener"
 								target="_blank"
-								href='https://drive.google.com/file/d/1fA5m3fYKgClCrKpKB-jRcj4WWbp30Pfd/view?usp=sharing' download
+								href='https://drive.google.com/file/d/1uSay5U-ovRQ7WG67eFuIomkVBBc5bh5v/view?usp=sharing' download
 							>
 								<Image 
 								src={ vectorImg } 

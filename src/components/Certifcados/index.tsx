@@ -13,7 +13,6 @@ export function Certificados() {
                             <h2>Certificados</h2>
                         </div>
                         <p>
-
                             Desenvolvedor React
                             TreinaWeb / (fevereiro/2022)  Certificado:
                             <a
@@ -22,7 +21,7 @@ export function Certificados() {
                                 target="_blank"
                                 href="https://www.treinaweb.com.br/certificado/NHJNE9MMLBPD"
                                 title="Para visualizar o certificado"
-                            ><span>Link</span></a
+                            ><span> Link</span></a
                             >
                         </p>
                         <p>
@@ -33,7 +32,7 @@ export function Certificados() {
                                 target="_blank"
                                 href="https://www.treinaweb.com.br/certificado/VKNMLPIDASUM"
                                 title="Para visualizar o certificado"
-                            ><span>Link</span></a >
+                            ><span> Link</span></a >
                         </p>
                         <p>
                             Next.js – Fundamentos

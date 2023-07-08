@@ -16,8 +16,9 @@ export function Experiencias() {
                                 <h3>Universidade Nove de Julho | Uninove</h3>
                             </div>
                             <p>
-                                Análise e desenvolvimento de sistemas, cursei 2 semestres,
-                                no momento está com a matrícula trancada, pretendo retorna o mais breve póssivel.
+                                Tecnlogia em Análise e desenvolvimento de sistemas, estou cursando o segundo semestre, 
+                                com previsão para concluir no primeiro semestre de 2025.
+                                
                             </p>
                         </div>
                         <div className="item-experiencia">
