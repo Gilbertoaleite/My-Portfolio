@@ -11,7 +11,7 @@ export default function Home() {
         <meta charSet="utf-8" />
         <meta name="author" content="Gilberto A Leite Frontend" />
         <meta name="description" content="Desenvolvedor Front-end Web React e Next" />
-        <title>Gilberto Dev Front-end</title>
+        <title>Gilberto A Leite Dev Front-end</title>
       </Head>
       {/* Conteúdo da Home pode ser adicionado aqui */ }
     </>
