@@ -1,5 +1,6 @@
 import {createGlobalStyle} from 'styled-components'
 
+
 export const GlobalStyle = createGlobalStyle`
 
 /* cores */
@@ -25,132 +26,105 @@ export const GlobalStyle = createGlobalStyle`
 --green:#33CC95;
 }
 /* fim cores */
+  /* Reset básico */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+  }
 
-*{
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
+  body {
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, 
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	box-sizing: border-box;
-	
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 2;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-scroll-behavior: smooth;
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 500;
+  }
 
-@media (max-width: 1080px){
-	font-size: 93.75%;
-	
-}
-@media (max-width: 720px){
-	font-size: 87.5%;
-	}
-}
+  h2 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+  }
 
-body, input, textarea, button{
-    background: var(--background);
-	color: #fffeee;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-	Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    /* overflow-x: hidden; */
+  button {
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  input, textarea {
+    font-family: inherit;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Botão personalizado */
+  .botao {
+    padding: 1em 2em;
+    border-radius: 5px;
+    background-color: ${({ theme }) => theme.bluePadrao};
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .botao > img {
+    width: 1.5em;
+    margin: 0 auto;
+  }
+
+  .botao:hover {
+    filter: brightness(0.8);
+  }
+
+  /* Containers */
+  .sectOff {
+    background: ${({ theme }) => theme.backgroundContainers};
+    transition: 0.5s;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sectOff.background-day-gray {
+    background-color: ${({ theme }) => theme.backgroundContainersDay};
+    color: ${({ theme }) => theme.textDay};
+  }
+
+  .flex-experiencia.background-day-gray {
+    background-color: ${({ theme }) => theme.backgroundContainersDay};
+    text-decoration: none;
+  }
+
+  /* Responsividade */
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%;
     }
+  }
 
-h1,h2,h3,h4,h5,h6,strong{
-   /* font-weight:600; */
-    font-weight:500;
-}
-h2 {
-	font-size: 1.5em;
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.5%;
     }
-
-button{
-    cursor:pointer;
-}
-.botao {
-	padding: 1em 2em;
-	border-radius: 5px;
-	text-align: center;
-	background-color: var(--blue-padrao);
-	width: 50%;
-	color: white;
-	text-decoration: none;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	transition: 0.3s;
-}
-.botao > img {
-	align-items: center;
-	width: 1.5em;
-	margin: 0 auto;
-}
-
-.botao:hover {
-	/* background-color: #5dad; */
-	filter: brightness(0.8);
-}
-
-.sectOff {
-	
-	background: var(--background-containers);
-	transition: 0.5s;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.sectOff.background-day-gray {
-	background-color: var(--background-containers-day);
-	color: var(--text-day);
-}
-
-.flex-experiencia.background-day-gray {
-	background-color: var(--background-containers-day);
-	text-decoration: none;
-}
-
-
-
+  }
 `;

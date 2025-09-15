@@ -1,62 +1,64 @@
-// import Image from 'next/image';
-import { Container } from './styles'
-
+import { useTranslation } from 'next-i18next';
+import { Container } from './styles';
 
 export function Certificados() {
-
+    const { t } = useTranslation('common');
     return (
         <Container>
             <section className="flex-experiencia">
                 <div className="item-experiencia">
                     <div className="item-experiencia">
                         <div className="faixa-item-experiencia">
-                            <h2>Certificados</h2>
+                            <h2>{ t('certificados.title', 'Certificados') }</h2>
                         </div>
                         <p>
-                            Desenvolvedor React
-                            TreinaWeb / (fevereiro/2022)  Certificado:
+                            { t('certificados.react', 'Desenvolvedor React') }<br />
+                            TreinaWeb / (fevereiro/2022) { t('certificados.certificate', 'Certificado') }:
                             <a
                                 rel="noreferrer noopener"
                                 className="item-experiencia"
                                 target="_blank"
                                 href="https://www.treinaweb.com.br/certificado/NHJNE9MMLBPD"
-                                title="Para visualizar o certificado"
-                            ><span> Link</span></a
-                            >
+                                title={ t('certificados.view', 'Para visualizar o certificado') }
+                            ><span>{ t('certificados.link', 'Link') }</span></a>
                         </p>
                         <p>
-                            HTML5 e CSS3 - Desenvolvimento web Avançado TreinaWeb / (fevereiro/2022) Certificado:
+                            { t('certificados.htmlcss', 'HTML5 e CSS3 - Desenvolvimento web Avançado') }<br />
+                            TreinaWeb / (fevereiro/2022) { t('certificados.certificate', 'Certificado') }:
                             <a
                                 rel="noreferrer noopener"
                                 className="item-experiencia"
                                 target="_blank"
                                 href="https://www.treinaweb.com.br/certificado/VKNMLPIDASUM"
-                                title="Para visualizar o certificado"
-                            ><span> Link</span></a >
+                                title={ t('certificados.view', 'Para visualizar o certificado') }
+                            ><span>{ t('certificados.link', 'Link') }</span></a>
                         </p>
                         <p>
-                            Next.js – Fundamentos
-                            TreinaWeb / (feveiro/2022) Certificado: <a
+                            { t('certificados.next', 'Next.js – Fundamentos') }<br />
+                            TreinaWeb / (fevereiro/2022) { t('certificados.certificate', 'Certificado') }:
+                            <a
                                 rel="noreferrer noopener"
                                 className="item-experiencia"
                                 target="_blank"
                                 href="https://www.treinaweb.com.br/certificado/UOMXX0N7OWJX"
-                                title="Para visualizar o certificado"
-                            ><span>Link</span></a >
+                                title={ t('certificados.view', 'Para visualizar o certificado') }
+                            ><span>{ t('certificados.link', 'Link') }</span></a>
                         </p>
                         <p>
-                            Python Fundamentos
-                            TreinaWeb / (outubro/2021) Certificado: <a
+                            { t('certificados.python', 'Python Fundamentos') }<br />
+                            TreinaWeb / (outubro/2021) { t('certificados.certificate', 'Certificado') }:
+                            <a
                                 rel="noreferrer noopener"
                                 className="item-experiencia"
                                 target="_blank"
                                 href="https://www.treinaweb.com.br/certificado/EBMXRYLWWHA1"
-                                title="Para visualizar o certificado"
-                            ><span>Link</span></a >
+                                title={ t('certificados.view', 'Para visualizar o certificado') }
+                            ><span>{ t('certificados.link', 'Link') }</span></a>
                         </p>
                         <p>
-                            Desenvolvimento Pessoal - ONE
-                            Alura / (janeiro/2022) Cerificado: <a
+                            { t('certificados.pessoal', 'Desenvolvimento Pessoal - ONE') }<br />
+                            Alura / (janeiro/2022) { t('certificados.certificate', 'Certificado') }:
+                            <a
                                 rel="noreferrer noopener"
                                 className="item-experiencia"
                                 target="_blank"

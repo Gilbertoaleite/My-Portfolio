@@ -1,10 +1,8 @@
 
 import { useTranslation } from 'next-i18next';
-import styled from "styled-components";
+import { Container } from "./styles";
 import vectorImg from "../../assets/img/Vector.svg";
 import linkedinBrands from "../../assets/img/linkedin-brands.svg";
-
-const Container = styled.div``;
 import Image from "next/image";
 
 export function SobreMim() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 
 const Ul = styled.ul`
@@ -30,16 +31,15 @@ li {
 `;
 
 const RightNav = ({ open }) => {
-return (
-    <Ul open={open}>
-    <li><a href="#sobre-mim"> Sobre Mim</a></li>
-    <li><a href="#projetos"> Projetos</a></li>
-    <li><a href="#habilidades" >Habilidades</a></li>
-    <li><a href="#experiencias"> Educação e Experiencias</a></li>
-    <li><a href="https://gilbertoaleite-portfolio.netlify.app/eng.html">English</a>
-    </li>
-    </Ul>
-)
+    const { t } = useTranslation('common');
+    return (
+        <Ul open={ open }>
+            <li><a href="#sobre-mim" className="nav-li">{ t('about', 'Sobre Mim') }</a></li>
+            <li><a href="#projetos" className="nav-li">{ t('projects', 'Projetos') }</a></li>
+            <li><a href="#habilidades" className="nav-li">{ t('skills', 'Habilidades') }</a></li>
+            <li><a href="#experiencias" className="nav-li">{ t('education', 'Experiências') }</a></li>
+        </Ul>
+    )
 }
 
 export default RightNav

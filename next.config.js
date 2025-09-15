@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+const { i18n } = require('./next-i18next.config');
 const nextConfig = {
   reactStrictMode: true,
   compiler: {
@@ -8,8 +9,8 @@ const nextConfig = {
   images: {
     domains: ['github.com/gilbertoaleite.png']
   },
-
-  webpack:{
+  i18n,
+  webpack: {
     webpack(config) {
       config.module.rules.push({
         test: /\.svg$/,
@@ -17,6 +18,6 @@ const nextConfig = {
       });
     }
   }
-}
+};
 
 module.exports = nextConfig

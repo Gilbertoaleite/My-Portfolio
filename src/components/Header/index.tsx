@@ -1,16 +1,47 @@
 // import Image from 'next/image';
 // import sunImg  from "../../assets/img/sun-regular.svg";
+
+
 import React, { useEffect, useState } from 'react';
 import Burger from './Burger';
+import { LanguageMenu } from './LanguageMenu';
+import { Container } from './styles';
+import { useTranslation } from 'next-i18next';
 
-import { Container } from './styles'
+
+
+
 
 export function Header() {
+    const { t } = useTranslation('common');
+    const [mounted, setMounted] = useState(false);
+    const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+        if (typeof window !== 'undefined') {
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme === 'dark' || storedTheme === 'light') {
+                return storedTheme;
+            }
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            return prefersDark ? 'dark' : 'light';
+        }
+        return 'light';
+    });
 
-    const [color, setColor] = useState('var(--background)');
     useEffect(() => {
-        document.body.style.backgroundColor = color;
-    }, [color]);
+        setMounted(true);
+    }, []);
+
+    useEffect(() => {
+        if (!mounted) return;
+        document.body.style.backgroundColor = theme === 'dark' ? 'var(--background)' : 'var(--background-day)';
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('theme', theme);
+        }
+    }, [theme, mounted]);
+
+    const handleThemeToggle = () => {
+        setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+    };
 
     return (
         <>
@@ -19,36 +50,26 @@ export function Header() {
                     <nav id="nav-menu">
                         {/*  menu mobile  */ }
                         <Burger />
-                        
                         {/* menu desktop */ }
-                        <ul className='nav-menu' id="menu" role="menu">
 
-                            <li id="lista-menu" ><a href="#sobre-mim"
-                                className="nav-li">Sobre Mim</a>
-                            </li>
-                            <li id="lista-menu1"><a href="#projetos"
-                                className="nav-li">Projetos</a>
-                            </li>
-                            <li id="lista-menu2" ><a href="#habilidades"
-                                className="nav-li">Habilidades</a>
-                            </li>
-                            <li id="lista-menu3"><a href="#experiencias"
-                                className="nav-li">Educação e Experiencias</a>
-                            </li>
-                            <li id="lista-menu4"><a href="https://gilbertoaleite-portfolio.netlify.app/eng.html"
-                            className="nav-li">English</a>
-                        </li>
-                        </ul>
+                        <LanguageMenu />
+                        { mounted && (
+                            <label className="switch" title="Botão Modo Noturno" style={ { display: 'flex', alignItems: 'center', gap: 8 } }>
+
+                                <input
+                                    type="checkbox"
+                                    checked={ theme === 'light' }
+                                    onChange={ handleThemeToggle }
+                                    id="toggleSwitch"
+                                    aria-label={ theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro' }
+                                />
+                                <span className="slider round"></span>
+
+                            </label>
+                        ) }
                     </nav>
-                    <label className="switch" title="Botão Modo Noturno">
-                        <input type="checkbox" onClick={ e =>
-                            setColor(color === 'var(--background-day)' ? 'var(--background)' : 'var(--background-day)' )} id="toggleSwitch" />
-                        <span className="slider round">
-
-                        </span>
-                    </label>
                 </header>
             </Container>
         </>
-    )
-};
+    );
+}

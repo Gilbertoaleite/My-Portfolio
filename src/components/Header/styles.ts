@@ -1,28 +1,39 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
-	.header{
+.header {
 	height: 70px;
 	display: flex;
-	padding: 1rem;
-	align-items: center ;
+	flex-direction: row;
+	align-items: center;
 	justify-content: flex-end;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
 	background: var(--background-containers);
-	
-.header.background-day-gray {
+}
+
+.background-day-gray {
 	color: #111111;
 	background-color: #ebebeb;
-	}
+}
 
-.header.background-day-gray > a {
+.background-day-gray > a {
 	color: #111111;
 	font-size: 1em;
 	font-weight: 700;
-	
 }
 
-    #menu {
+#nav-menu {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+#menu {
 	gap: 1rem;
 	display: flex;
 	transition: 0.2s;
@@ -42,6 +53,7 @@ export const Container = styled.div`
 	color: var(--shape);
 	margin-bottom: 1.5em;
 	font-weight: semibold;
+	text-decoration: none;
     
     &:hover {
         border-bottom: solid 0.5px var(--blue-padrao);
@@ -49,6 +61,36 @@ export const Container = styled.div`
     .text-day {
         color: var(--text-day);
     }
+}
+
+.language-menu-btn {
+	margin-left: 2rem;
+	margin-right: 1rem;
+	padding: 6px 18px;
+	border-radius: 20px;
+	border: 1px solid #0070f3;
+	background: var(--background-containers);
+	color: #0070f3;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s;
+	outline: none;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	height: 40px;
+	box-sizing: border-box;
+}
+
+.language-menu-btn:focus {
+	border-color: #005bb5;
+	outline: 2px solid #005bb5;
+}
+
+.language-menu-btn svg, .language-menu-btn span {
+	display: flex;
+	
+	align-items: center;
 }
 
 .switch {
@@ -63,9 +105,7 @@ export const Container = styled.div`
     height: 0;
     opacity: 0;
     }
-}
-
-.slider {
+	.slider {
 	top: 0;
 	left: 0;
 	right: 0;
@@ -117,7 +157,5 @@ input:checked + .slider:before {
 	
 
 }
-
-
 }
-`
+`;

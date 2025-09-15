@@ -8,217 +8,182 @@
 // import alurinhaImg from '../../assets/img/projetos/alurinha-img.png';
 // import treinacookImg from '../../assets/img/projetos/treinacook-img.png';
 // import dashboardImg from '../../assets/img/projetos/dashboard-img.png';
+
+import { useTranslation } from 'next-i18next';
 import { Container } from "./styles";
 
+
 export function Projetos() {
+	const { t } = useTranslation('common');
 	return (
-		<Container >
+		<Container>
 			<section className="projetos" id="projetos">
-				<h2 >Projetos</h2>
+				<h2>{ t('projects') }</h2>
 				<div className="container-projetos">
-	{/* Projeto 1 */}
+					{/* Projeto 1 */ }
 					<div className="item-projeto">
-						<h3>Jogo da Foca</h3>
+						<h3>{ t('focaTitle', 'Jogo da Foca') }</h3>
 						<img src='https://i.imgur.com/NSn8zME.png' />
-						<p>
-							Joguinho feito durante a Challenger One da Oracle na Alura.
-						</p>
+						<p>{ t('focaDesc', 'Joguinho feito durante a Challenger One da Oracle na Alura.') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://gilbertoaleite.github.io/jogo-da-foca-desafio-alura/"
-						>Link do Projeto</a
-						>
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/jogo-da-foca-desafio-alura"
-						>Link do Git</a
-						>
-						</div>
-	{/* Projeto 2 */}
-
+						>{ t('gitLink', 'Link do Git') }</a>
+					</div>
+					{/* Projeto 2 */ }
 					<div className="item-projeto">
-						<h3>Clone do internet banking do Inter</h3>
-						<img src='https://i.imgur.com/RQjr7rG.png'/>
-						<p>
-						Foi desenvolvido o layout do banco Inter, durante o bootcamp Inter na DIO,
-						ultizando create react app.
-						</p>
+						<h3>{ t('interTitle', 'Clone do internet banking do Inter') }</h3>
+						<img src='https://i.imgur.com/RQjr7rG.png' />
+						<p>{ t('interDesc', 'Foi desenvolvido o layout do banco Inter, durante o bootcamp Inter na DIO, ultizando create react app.') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://banco-inter-clone.vercel.app/dashboard"
-						>Link do Projeto</a
-						>
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/Banco-inter-clone"
-						>Link do Git</a
-						>
-						</div>
-	{/* Projeto 3 */}			
-				<div className="item-projeto">
-						<h3>Projeto Adote um Pet | TreinaWeb</h3>
+						>{ t('gitLink', 'Link do Git') }</a>
+					</div>
+					{/* Projeto 3 */ }
+					<div className="item-projeto">
+						<h3>{ t('petTitle', 'Projeto Adote um Pet | TreinaWeb') }</h3>
 						<img src='https://i.imgur.com/HyUFqPy.png' />
-						<p>
-							O projeto foi feito o durante o MultiStack da TreinaWeb, desenvolvido com
-							Next.js, @mui/material, axios e @emotion/styled, e ultilizado o Java com Spring boot para api.
-						</p>
+						<p>{ t('petDesc', 'O projeto foi feito o durante o MultiStack da TreinaWeb, desenvolvido com Next.js, @mui/material, axios e @emotion/styled, e ultilizado o Java com Spring boot para api.') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://pet-web-blush.vercel.app/"
-						>Link do Projeto</a>
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/PetWeb"
-						>Link do Git</a>
-						</div>
-	{/* Projeto 4 */}
+						>{ t('gitLink', 'Link do Git') }</a>
+					</div>
+					{/* Projeto 4 */ }
 					<div className="item-projeto">
-						<h3>Dashboard de Vendas</h3>
+						<h3>{ t('dashboardTitle', 'Dashboard de Vendas') }</h3>
 						<img src='https://i.imgur.com/tApf6gh.png' />
-						<p>
-							Desenvolvido o dashboard de vendas com Spring e React a parte
-							FrontEnd, feito na primeira aula da semana Spring React do
-							DevSuperior.
-						</p>
+						<p>{ t('dashboardDesc', 'Desenvolvido o dashboard de vendas com Spring e React a parte FrontEnd, feito na primeira aula da semana Spring React do DevSuperior.') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://gilberto-dsvendas.netlify.app"
-						>Link do Projeto</a
-						>
-
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/projeto-sds3"
-						>Link do Git</a>
+						>{ t('gitLink', 'Link do Git') }</a>
 					</div>
-{/* Projeto 5 */}
-
+					{/* Projeto 5 */ }
 					<div className="item-projeto">
-						<h3>Alurinha</h3>
+						<h3>{ t('alurinhaTitle', 'Alurinha') }</h3>
 						<img src='https://i.imgur.com/YEQPAPk.png' />
-						<p>
-						Alurinha, aula de flexbox da Alura.
-						</p>
+						<p>{ t('alurinhaDesc', 'Alurinha, aula de flexbox da Alura.') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://gilbertoaleite.github.io/alurinha-aula-flexbox/"
-						>Link do Projeto</a
-						>
-
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/alurinha-aula-flexbox"
-						>Link do Git</a>
+						>{ t('gitLink', 'Link do Git') }</a>
 					</div>
-
-{/* Projeto 6 */}
+					{/* Projeto 6 */ }
 					<div className="item-projeto">
-						<h3>NETFLIX Clone</h3>
+						<h3>{ t('netflixTitle', 'NETFLIX Clone') }</h3>
 						<img src='https://i.imgur.com/l1E066x.png' />
-						<p>
-							Foi desenvolvido em html e com o bootstrap foi o meu primeiro projeto
-							da Dio.
-						</p>
+						<p>{ t('netflixDesc', 'Foi desenvolvido em html e com o bootstrap foi o meu primeiro projeto da Dio.') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://gilbertoaleite-netflix-clone.netlify.app/index.html"
-						>Link do Projeto</a
-						>
-
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/InterfaceNetflix"
-						>Link do Git</a>
+						>{ t('gitLink', 'Link do Git') }</a>
 					</div>
-{/* Projeto 7 */}
+					{/* Projeto 7 */ }
 					<div className="item-projeto">
-						<h3>TreinaCook - Receitas</h3>
+						<h3>{ t('treinacookTitle', 'TreinaCook - Receitas') }</h3>
 						<img src='https://i.imgur.com/Iwrek7d.png' />
-						<p>
-							Foi desenvolvido em Next.js e gerado para a pagina estática que
-							deixou o site muito mais rápido.
-						</p>
+						<p>{ t('treinacookDesc', 'Foi desenvolvido em Next.js e gerado para a pagina estática que deixou o site muito mais rápido.') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://gilbertoaleite-receitas-next-js.vercel.app/"
-						>Link do Projeto</a
-						>
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/projeto-com-next-js-treinaweb"
-						>Link do Git</a>
+						>{ t('gitLink', 'Link do Git') }</a>
 					</div>
-{/* Projeto 8 */}
+					{/* Projeto 8 */ }
 					<div className="item-projeto">
-						<h3>Barbearia Alura</h3>
-						<img src='https://i.imgur.com/xUS7UvA.png'  />
-						<p>
-						Barbearia Alura, site fictício de uma Barbearia desenvolvido na aula de front-end da Alura
-						</p>
+						<h3>{ t('barbeariaTitle', 'Barbearia Alura') }</h3>
+						<img src='https://i.imgur.com/xUS7UvA.png' />
+						<p>{ t('barbeariaDesc', 'Barbearia Alura, site fictício de uma Barbearia desenvolvido na aula de front-end da Alura') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://barbearia-alura-fake.netlify.app/"
-						>Link do Projeto</a>
+						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/Barbearia"
-							>Link do Git</a>
-						
+						>{ t('gitLink', 'Link do Git') }</a>
 					</div>
-{/* Projeto 9 */}
+					{/* Projeto 9 */ }
 					<div className="item-projeto">
-						<h3>Decodificador de texto</h3>
+						<h3>{ t('decoderTitle', 'Decodificador de texto') }</h3>
 						<img src='https://i.imgur.com/7BNWeK8.png' />
-						<p>Challenge Oracle ONE Lógica de Programação 2022 </p>
+						<p>{ t('decoderDesc', 'Challenge Oracle ONE Lógica de Programação 2022') }</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://gilbertoaleite-alura-challeg-decoder.netlify.app/" >
-							Link do Projeto</a>
-
-							<a
+							href="https://gilbertoaleite-alura-challeg-decoder.netlify.app/"
+						>{ t('projectLink', 'Link do Projeto') }</a>
+						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
 							href="https://github.com/Gilbertoaleite/codificador-e-descodificador-alura"
-						>Link do Git</a>
+						>{ t('gitLink', 'Link do Git') }</a>
 					</div>
 				</div>
 			</section>
-
 		</Container>
 	);
 }

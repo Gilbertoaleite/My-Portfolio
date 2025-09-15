@@ -34,25 +34,32 @@ export const Container = styled.div`
             }
     }
     .whatsapp {
-	padding: 1em 0.8em;
-	margin-top: 1em;
-	text-align: center;
-	background-color: #04b431;
-	width: 200px;
-	color: white;
-	text-decoration: none;
-	border-radius: 5px;
-	display: flex;
-	justify-content: space-around;
-	font-weight: 700;
-	align-items: center;
-	font-size: 1.3rem;
-	transition: 0.2s;
-    
+        padding: 1em 0.8em;
+        margin-top: 1em;
+        text-align: center;
+        background-color: #04b431;
+        width: 200px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        align-items: center;
+        font-size: 1.3rem;
+        gap: 10px;
+        transition: 0.2s;
+        
         &:hover {
             filter: brightness(0.8);
-                }
-            }
+        }
+        
+        .whatsapp-icon {
+            width: 24px !important;
+            height: 24px !important;
+            margin-right: 4px;
+        }
+    }
         
     .imagem-inicial {
 	width: 60%;
