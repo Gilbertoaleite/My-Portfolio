@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTranslation } from 'next-i18next';
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 const Ul = styled.ul`
@@ -30,8 +30,12 @@ li {
 }
 `;
 
-const RightNav = ({ open }) => {
-    const { t } = useTranslation('common');
+const RightNav = ({ open }: { open: boolean }) => {
+    const [mounted, setMounted] = useState(false);
+    // @ts-ignore
+    const [t] = useTranslation('common') as any;
+    useEffect(() => { setMounted(true); }, []);
+    if (!mounted) return null;
     return (
         <Ul open={ open }>
             <li><a href="#sobre-mim" className="nav-li">{ t('about', 'Sobre Mim') }</a></li>

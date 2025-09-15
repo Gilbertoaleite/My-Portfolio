@@ -19,17 +19,18 @@ export const Container = styled.div`
 	text-align: center;
 	font-weight: 700;
 }
-.flex-experiencia {
-	display: flex;
-	justify-content: center;
-	width: 95%;
-	margin: 2em auto;
-	/* background-color: #2c2c2c; */
-	background: var(--background-containers);
-	padding: 2rem;
-	border-radius: 9px;
-	transition: 0.5s;
-}
+	.flex-experiencia {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 95%;
+		margin: 2em auto;
+		background: var(--background-containers);
+		padding: 2rem;
+		border-radius: 9px;
+		transition: 0.5s;
+		gap: 2rem;
+	}
  .reverse {
 	display: flex;
 	width: 77%;
@@ -38,18 +39,20 @@ export const Container = styled.div`
 	gap: 1rem;
 }
 
-.item-experiencia {
-	/* width: 100%; */
-	text-align: center;
-	align-items: center;
-	text-align: left;
-	text-decoration: none;
-}
+	.item-experiencia {
+		flex: 1 1 0;
+		min-width: 250px;
+		max-width: 50%;
+		text-align: left;
+		text-decoration: none;
+		margin: 0 1rem;
+	}
 
-.faixa-item-experiencia {
-	border-bottom: 6px solid #1f36cd;
-	/* font-size: 1em; */
-}
+	.faixa-item-experiencia {
+		border-bottom: 4px solid #1f36cd;
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+	}
 .faixa-item-experiencia > h2 {
 	text-align: center;
 	font-size: 1.5em;

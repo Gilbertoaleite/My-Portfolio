@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 
 export function Presentation() {
-	const { t } = useTranslation('common');
+	const { t } = useTranslation<'common'>('common');
 	return (
 		<Container>
 			<section id="inicial">

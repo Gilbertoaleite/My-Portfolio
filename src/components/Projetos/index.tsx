@@ -14,7 +14,7 @@ import { Container } from "./styles";
 
 
 export function Projetos() {
-	const { t } = useTranslation('common');
+	const { t } = useTranslation<'common'>('common');
 	return (
 		<Container>
 			<section className="projetos" id="projetos">

@@ -13,7 +13,7 @@ import { useTranslation } from 'next-i18next';
 
 
 export function Header() {
-    const { t } = useTranslation('common');
+    const { t } = useTranslation<'common'>('common');
     const [mounted, setMounted] = useState(false);
     const [theme, setTheme] = useState<'light' | 'dark'>(() => {
         if (typeof window !== 'undefined') {
