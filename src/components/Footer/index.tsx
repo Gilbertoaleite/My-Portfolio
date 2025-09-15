@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 
 export function Footer() {
+	// @ts-ignore - evitar erro de tipos profundo do react-i18next
 	const { t } = useTranslation('common');
 	return (
 		<Container>
