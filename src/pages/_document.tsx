@@ -31,7 +31,9 @@ export default class MyDocument extends Document {
     const locale = (this.props as any).__NEXT_DATA__?.locale || 'pt';
     return (
       <Html lang={ locale }>
-        <Head />
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <body>
           <Main />
           <NextScript />
