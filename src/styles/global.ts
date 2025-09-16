@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
 
---text-day:#333333;
+--text-day:#fffeee;
 --background-day:#20B2AA;
 --background-containers-day: #ebebeb;
 --red: #E62E4D;

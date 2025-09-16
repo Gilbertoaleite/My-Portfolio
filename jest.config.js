@@ -10,5 +10,10 @@ module.exports = {
         'ts-jest': {
             tsconfig: 'tsconfig.jest.json'
         }
+    },
+    moduleNameMapper: {
+        '\\.(svg|png|jpg|jpeg|gif|webp|avif|ico)$': '<rootDir>/__mocks__/fileMock.js',
+        '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+        '^next/image$': '<rootDir>/__mocks__/nextImageMock.js'
     }
 };

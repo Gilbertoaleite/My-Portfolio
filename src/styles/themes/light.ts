@@ -7,14 +7,14 @@ export const lightTheme = createGlobalStyle`
     --background: #ffffff;
     --background-day: #ffffff;
     --background-containers-day: #ffffff;
-    --text-day: #111111;
-    --text-title: #000000;
-    --text-body: #222222;
+    --text-day: #fffeee;
+    --text-title: #e0e0e0;
+    --text-body: #b0b0b0;
     --red: #E62E4D;
-    --blue: #111111;
-    --blue-padrao: #111111;
-    --blue-light: #333333;
-    --shape: #ffffff;
+    --blue: #5429cc;
+    --blue-padrao: #5882fa;
+    --blue-light: #6933ff;
+    --shape: #1f1f1f;
     --green: #33CC95;
   }
   background-color: var(--background-containers-day);
