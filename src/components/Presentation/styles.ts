@@ -1,14 +1,43 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    @media (max-width: 700px) {
+        .imagem-inicial {
+            display: none !important;
+        }
+        .texto-inicial {
+            margin-top: 1em;
+        }
+        .imagem-inicial {
 
-.container-inicial {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        .imagem-inicial > img {
+            width: 70%;
+            max-width: 220px;
+            margin: 0 auto;
+            display: block;
+        }
+        .container-inicial {
+            min-height: 180px;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5em;
+            margin-top: 1.2em;
+            padding-top: 3.5em;
+        }
+    }
+    .container-inicial {
 	display: flex;
 	align-items: center;
 	width: 80%;
 	margin: 2em auto;
 	justify-content: space-between;
-	max-width: 1400px;
+	max-width: 1000px;
     
     
     .texto-inicial {
@@ -62,12 +91,7 @@ export const Container = styled.div`
     }
         
     .imagem-inicial {
-	width: 60%;
+	width: 90%;
     
     }
-    .imagem-inicial > img {
-	width: 100%;
-    
-    }
-
 `;

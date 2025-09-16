@@ -82,15 +82,16 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 0.18em;
     width: 50%;
     text-decoration: none;
     transition: 0.3s;
   }
 
   .botao > img {
-    width: 1.5em;
-    margin: 0 auto;
+    width: 2em;
+    margin: 0;
   }
 
   .botao:hover {

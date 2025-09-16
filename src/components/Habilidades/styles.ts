@@ -22,17 +22,19 @@ export const Container = styled.div`
 
 .icones-habilidades {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
-	flex-direction: row;
+	gap: 2em;
 	margin: 1em auto;
-	width: 80%;
+	width: 100%;
+	max-width: 1100px;
 }
 
 .moldura-icone {
 	background-color: var(--background);
-	height: 90px;
+	height: 115px;
 	width: 90px;
 	display: flex;
 	align-items: center;
@@ -43,8 +45,20 @@ export const Container = styled.div`
 	flex-direction: column;
 	position: relative;
 	cursor: pointer;
-	/* color: transparent; */
 	color: var(--text-night);
+	margin: 0.5em;
+}
+@media (max-width: 700px) {
+	.icones-habilidades {
+		gap: 1em;
+		width: 100%;
+		padding: 0 0.5em;
+	}
+	.moldura-icone {
+		height: 70px;
+		width: 70px;
+		margin: 0.3em;
+	}
 }
 
 .moldura-icone.background-day {
@@ -64,11 +78,13 @@ export const Container = styled.div`
 	filter: brightness(0.8);
 }
 .moldura-icone > p {
-	position: absolute;
-	bottom: -35px;
+	position: static;
+	margin-top: 0.5em;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 1em;
 	letter-spacing: 1px;
+	text-align: center;
+	width: 100%;
 }
 
 .moldura-icone:hover {
@@ -78,7 +94,6 @@ export const Container = styled.div`
 .html.show-hab,
 .python.show-hab,
 .javascript.show-hab,
-.react.show-hab,
 .next.show-hab,
 .css.show-hab {
 	color: var(--shape);

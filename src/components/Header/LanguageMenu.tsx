@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useRouter } from 'next/router';
 import { i18n } from 'next-i18next';
 
-// SVGs inline para bandeiras PT e EN
+// Emojis de bandeira PT e EN sem texto, apenas aria-label para acessibilidade
 const FlagPT = () => (
     <span style={ { fontSize: 18, marginRight: 6 } } role="img" aria-label="Português">🇧🇷</span>
 );

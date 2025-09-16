@@ -48,25 +48,24 @@ export function Header() {
             <Container>
                 <header className="header">
                     <nav id="nav-menu">
-                        {/*  menu mobile  */ }
-                        <Burger />
-                        {/* menu desktop */ }
-
-                        <LanguageMenu />
-                        { mounted && (
-                            <label className="switch" title="Botão Modo Noturno" style={ { display: 'flex', alignItems: 'center', gap: 8 } }>
-
-                                <input
-                                    type="checkbox"
-                                    checked={ theme === 'light' }
-                                    onChange={ handleThemeToggle }
-                                    id="toggleSwitch"
-                                    aria-label={ theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro' }
-                                />
-                                <span className="slider round"></span>
-
-                            </label>
-                        ) }
+                        <div className="nav-burger">
+                            <Burger />
+                        </div>
+                        <div className="nav-actions">
+                            <LanguageMenu />
+                            { mounted && (
+                                <label className="switch" title="Botão Modo Noturno" style={ { display: 'flex', alignItems: 'center', gap: 8 } }>
+                                    <input
+                                        type="checkbox"
+                                        checked={ theme === 'light' }
+                                        onChange={ handleThemeToggle }
+                                        id="toggleSwitch"
+                                        aria-label={ theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro' }
+                                    />
+                                    <span className="slider round"></span>
+                                </label>
+                            ) }
+                        </div>
                     </nav>
                 </header>
             </Container>

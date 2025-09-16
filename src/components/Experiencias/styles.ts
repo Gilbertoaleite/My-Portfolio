@@ -60,4 +60,42 @@ export const Container = styled.div`
 }
 
 
+	@media (max-width: 900px) {
+		.flex-experiencia {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 1.5rem;
+			padding: 1.2rem;
+		}
+		.item-experiencia {
+			max-width: 100%;
+			margin: 0.5rem 0;
+			min-width: 180px;
+		}
+		.container-experiencias {
+			gap: 1.2em;
+			padding: 0 0.5em;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.container-experiencias {
+			margin: 1.5em auto;
+			padding: 0 0.2em;
+		}
+		.flex-experiencia {
+			padding: 0.7rem;
+			gap: 1rem;
+		}
+		.item-experiencia {
+			font-size: 0.98em;
+			min-width: 120px;
+		}
+		.faixa-item-experiencia > h3 {
+			font-size: 1.1em;
+		}
+		.container-experiencias > h2 {
+			font-size: 1.1em;
+		}
+	}
 `
