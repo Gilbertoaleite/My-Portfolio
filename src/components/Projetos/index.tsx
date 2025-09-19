@@ -119,7 +119,7 @@ export function Projetos() {
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://gilbertoaleite-netflix-clone.netlify.app/index.html"
+							href="https://nerdeflix.netlify.app/"
 						>{ t('projectLink', 'Link do Projeto') }</a>
 						<a
 							className="botao"
